@@ -1,0 +1,19 @@
+[default]
+SQLALCHEMY_DATABASE_URI = 'sqlite:///test.db'
+SQLALCHEMY_TRACK_MODIFICATIONS = 'disable'
+SECRET_KEY = '9572e80c-958f-4dd0-87b4-89758fc0edd8'
+TITLE = 'CRUD'
+
+
+EXTENSIONS = [
+    "backend.extensions.appearance",
+    "backend.extensions.database",
+    "backend.extensions.auth",
+    "backend.extensions.admin",
+    "backend.extensions.commands",
+    "backend.blueprints.views"
+]
+
+
+[production]
+SQLALCHEMY_DATABASE_URI = 'mysql:///...db'
