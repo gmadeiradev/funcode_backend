@@ -1,4 +1,4 @@
-from backend.extensions.database import db
+from flaskr.extensions.database import db
 from sqlalchemy_serializer import SerializerMixin
 
 

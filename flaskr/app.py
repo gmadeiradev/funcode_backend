@@ -1,5 +1,5 @@
 from flask import Flask
-from backend.extensions import configuration
+from flaskr.extensions import configuration
 
 
 def minmal_app():

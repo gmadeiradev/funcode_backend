@@ -1,7 +1,7 @@
 import click
-from backend.extensions.database import db
-from backend.extensions.auth import create_user
-from backend.models import Product
+from flaskr.extensions.database import db
+from flaskr.extensions.auth import create_user
+from flaskr.models import Product
 
 
 def create_db():

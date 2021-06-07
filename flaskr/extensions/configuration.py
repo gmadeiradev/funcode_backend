@@ -1,4 +1,4 @@
-from backend import extensions
+from flaskr import extensions
 from importlib import import_module
 
 from dynaconf import FlaskDynaconf

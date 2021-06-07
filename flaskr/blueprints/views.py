@@ -1,5 +1,5 @@
 from flask import render_template, abort
-from backend.models import Product
+from flaskr.models import Product
 
 
 def init_app(app):

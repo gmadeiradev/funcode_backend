@@ -3,8 +3,8 @@ from flask_admin.base import AdminIndexView
 from flask_admin.contrib import sqla
 from flask_simplelogin import login_required
 
-from backend.extensions.database import db
-from backend.models import Product, User
+from flaskr.extensions.database import db
+from flaskr.models import Product, User
 
 
 # Protect the admin with login by Monkey Patch
