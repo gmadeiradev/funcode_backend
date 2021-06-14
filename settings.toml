@@ -16,4 +16,4 @@ EXTENSIONS = [
 
 
 [production]
-SQLALCHEMY_DATABASE_URI = 'mysql:///...db'
+SQLALCHEMY_DATABASE_URI = 'postgresql:///...db'
