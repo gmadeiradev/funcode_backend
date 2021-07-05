@@ -2,7 +2,7 @@
 SQLALCHEMY_DATABASE_URI = 'sqlite:///test.db'
 SQLALCHEMY_TRACK_MODIFICATIONS = 'disable'
 SECRET_KEY = '9572e80c-958f-4dd0-87b4-89758fc0edd8'
-TITLE = 'CRUD'
+TITLE = 'Projeto Fun Code'
 
 
 EXTENSIONS = [
