@@ -6,6 +6,7 @@ TITLE = 'Projeto Fun Code'
 
 
 EXTENSIONS = [
+    "backend.extensions.configuration",
     "backend.extensions.appearance",
     "backend.extensions.database",
     "backend.extensions.auth",
