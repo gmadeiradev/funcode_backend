@@ -1,5 +1,5 @@
 [default]
-SQLALCHEMY_DATABASE_URI = 'sqlite:///test.db'
+SQLALCHEMY_DATABASE_URI = 'postgresql://fhcfilsvvwjmur:67c4e138484acc2eb954d969140ae3345b64de5267d5f485f0ccb03496bcba51@ec2-52-6-77-239.compute-1.amazonaws.com:5432/dd3doiufh2sjn0'
 SQLALCHEMY_TRACK_MODIFICATIONS = 'disable'
 SECRET_KEY = '9572e80c-958f-4dd0-87b4-89758fc0edd8'
 TITLE = 'Projeto Fun Code'
@@ -14,7 +14,3 @@ EXTENSIONS = [
     "backend.extensions.commands",
     "backend.blueprints.views"
 ]
-
-
-[production]
-SQLALCHEMY_DATABASE_URI = 'postgresql:///...db'

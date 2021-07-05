@@ -1,4 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 from sqlalchemy_serializer import SerializerMixin
 
 
@@ -7,10 +8,11 @@ db=SQLAlchemy()
 
 class Users(db.Model, SerializerMixin):
     id = db.Column(db.Integer, primary_key=True)
-    email = db.Column(db.String(140))
-    name = db.Column(db.String(512))
-    accont_type = db.Column(db.Integer)
+    email = db.Column(db.String(140), nullable=False)
+    name = db.Column(db.String(140), nullable=False)
+    accont_type = db.Column(db.Integer, nullable=False)
 
 
 def init_app(app):
-    db.init_app(app)
+    app.db = db.init_app(app)
+    Migrate(app, db)
