@@ -13,6 +13,12 @@ class Users(db.Model, SerializerMixin):
     accont_type = db.Column(db.Integer, nullable=False)
 
 
+class Classes(db.Model, SerializerMixin):
+    id_classes = db.Column(db.Integer, primary_key=True)
+    name_classes = db.Column(db.String(140), nullable=False)
+    description_classes = db.Column(db.String(140), nullable=False)
+
+
 def init_app(app):
     app.db = db.init_app(app)
     Migrate(app, db)
